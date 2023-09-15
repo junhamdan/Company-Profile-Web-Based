@@ -1,0 +1,498 @@
+/* NAVBAR */
+nav ul {
+  font-size: 17px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+/* nav ul li:nth-child(6) {
+  background-color: #0273e6;
+  border-radius: 8px;
+} */
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #0273e6;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.companies img {
+  border: none;
+}
+
+/* JUDUL ATAS */
+.title-1 {
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  background-image: url("../images/bg.jpg");
+  background-size: 1500px 150px;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.judul {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: white;
+  background-color: grey;
+  width: 200px;
+  text-align: center;
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 7px) {
+  .title-1 {
+    background-size: 768px 150px;
+  }
+}
+
+/* ISI ABOUT */
+.about-1 {
+  padding-top: 10px;
+}
+
+.image-about {
+  width: 400px;
+  height: 300px;
+}
+
+.top-about {
+  padding-left: 1px;
+  text-align: center;
+}
+
+.isi-about {
+  text-align: justify;
+  padding-left: 30px;
+}
+
+.isi-about-bawah {
+  text-align: justify;
+  padding-bottom: 250px;
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 780px) {
+  .image-about {
+    width: 375px;
+    height: auto;
+  }
+
+  .top-about {
+    float: left;
+    width: 80%;
+    padding-top: 30px;
+    text-align: center;
+    padding-left: 100px;
+  }
+
+  .isi-about {
+    width: 100%;
+    margin-right: 150px;
+  }
+}
+
+/* @media screen and (max-width: 1280px) {
+  .about-1 {
+    padding-right: 100px;
+  }
+  .image-about {
+    width: 600px;
+    height: auto;
+    padding-left: 10px;
+    margin-left: 30px;
+  }
+  .top-about {
+    float: left;
+    width: 100%;
+    padding-top: 400px;
+    text-align: center;
+    padding-left: 1px;
+  }
+  .isi-about {
+    float: left;
+    width: 100%;
+    padding-left: 30px;
+    margin-right: 100px;
+  }
+} */
+/* VISI MISI */
+.visi-misi {
+  background-image: url("https://www.kibrispdr.org/data/9/background-biru-pas-foto-hd-26.jpg");
+  padding-left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.judul-visi {
+  text-align: center;
+  background-size: 300px 100px;
+  padding-top: 15px;
+}
+
+.isi-visi-misi {
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+.visi-1 {
+  width: 500px;
+  position: relative;
+}
+
+@media screen and (max-width: 780px) {
+  .judul-visi {
+    padding-right: 20px;
+  }
+
+  .isi-visi-misi {
+    text-align: justify;
+    margin-right: 10px;
+  }
+
+  .visi-1 {
+    width: auto;
+    height: 250px;
+    float: left;
+    padding-right: 300px;
+  }
+}
+
+/* LAYANAN KAMI */
+.layanan-kami {
+  padding-top: 100px;
+}
+
+.layanan {
+  width: 500px;
+  height: 300px;
+}
+
+.isi-layanan {
+  text-align: justify;
+}
+
+.isi-layanan-1 {
+  text-decoration: solid;
+  display: flex;
+}
+
+.logo-ceklis {
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.text-layanan {
+  padding-left: 15px;
+  padding-top: 5px;
+  display: flex;
+  size: 20px;
+}
+
+@media screen and (max-width: 780px) {
+  .layanan {
+    width: 400px;
+    height: auto;
+    margin-right: 50px;
+    float: left;
+  }
+}
+
+/* OUR TEAM */
+.about {
+  text-align: center;
+  padding-top: 180px;
+}
+
+.our-team-1 {
+  padding-bottom: 30px;
+}
+
+.our-team {
+  padding: 20px 15px 30px;
+  background: pink;
+  border-radius: 15px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  clear: both;
+}
+
+.our-team .pic {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 25px;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .pic {
+  background: #17bebb;
+  border-radius: 50%;
+}
+
+.pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.our-team .title {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  color: #2e282a;
+  text-transform: uppercase;
+  margin: 0 0 7px 0;
+}
+
+.our-team .post {
+  display: block;
+  font-size: 15px;
+  color: #17bebb;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.our-team .social {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.our-team .social li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.our-team .social li a {
+  border-radius: 50%;
+  font-size: 15px;
+  color: #17bebb;
+  border: 1px solid #17bebb;
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social li a {
+  background: #17bebb;
+  color: #fff;
+}
+
+/*MARI BERGABUNG  */
+.mari-bergabung {
+  text-align: center;
+  background-image: url("https://www.kibrispdr.org/data/9/background-biru-pas-foto-hd-26.jpg");
+  padding-bottom: 200px;
+  margin-top: 100px;
+}
+
+.join-us {
+  padding-top: 80px;
+  color: white;
+}
+
+.join-p {
+  color: white;
+}
+
+#join-button {
+  margin-top: 30px;
+  border-radius: 20px;
+  width: 300px;
+  height: 50px;
+}
+
+/* FOOTER  */
+
+.site-footer {
+  background-color: #26272b;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+}
+
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+
+.site-footer hr.small {
+  margin: 20px 0;
+}
+
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+.site-footer a {
+  color: #737373;
+}
+
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  display: block;
+}
+
+.footer-links a {
+  color: #737373;
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.footer-links.inline li {
+  display: inline-block;
+}
+
+.site-footer .social-icons {
+  text-align: right;
+}
+
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #33353d;
+}
+
+.copyright-text {
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .site-footer [class^="col-"] {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0;
+  }
+
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center;
+  }
+}
+
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.social-icons a {
+  background-color: #eceeef;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
+}
+
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px;
+}
+
+.social-icons a.facebook:hover {
+  background-color: #3b5998;
+}
+
+.social-icons a.twitter:hover {
+  background-color: #00aced;
+}
+
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}
+
+.social-icons a.instagram:hover {
+  background-color: #ea4c89;
+}
+
+@media (max-width: 767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
+  }
+}
